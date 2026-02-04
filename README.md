@@ -71,3 +71,8 @@ socialProviders: {
 -> baseURL: process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000",    = tambahkan di auth-client.ts
 
 ```
+
+# Konfigurasi Membuat Authentikasi Login
+```bash
+npm install react-hook-form @hookform/resolvers zod 
+```
