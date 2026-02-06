@@ -19,6 +19,7 @@ model User {
   email         String
   emailVerified Boolean   @default(false)
   image         String?
+  password      String?
   createdAt     DateTime  @default(now())
   updatedAt     DateTime  @updatedAt
   sessions      Session[]
@@ -74,4 +75,18 @@ model Verification {
 
   @@index([identifier])
   @@map("verification")
+}
+
+
+model Plant {
+  id String @id @default(cuid())
+  name String
+  description String?
+  category String
+  stock Int
+  price Float
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  userId String
+  imageUrl String?
 }
