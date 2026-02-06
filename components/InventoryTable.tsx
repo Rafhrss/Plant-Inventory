@@ -3,9 +3,7 @@
 import {
   Table,
   TableBody,
-  TableCaption,
   TableCell,
-  TableFooter,
   TableHead,
   TableHeader,
   TableRow,
@@ -32,7 +30,7 @@ export default function InventoryTable() {
   return (
     <div className="w-full">
       <div className="flex items-center gap-2 py-4">
-        <div className="relative max-w-sm w-full">
+        <div className="relative max-w--sm w-full">
           <Input placeholder="Filter plants..."
           className="pl-10" />
 
@@ -68,12 +66,6 @@ export default function InventoryTable() {
             </TableRow>
           ))}
         </TableBody>
-        <TableFooter>
-          <TableRow>
-            <TableCell colSpan={3}>Total</TableCell>
-            <TableCell className="text-right">$2,500.00</TableCell>
-          </TableRow>
-        </TableFooter>
       </Table>
     </div>
   );
